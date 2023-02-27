@@ -1,13 +1,16 @@
 @font-face {
-font-family: "Gardens";
-src: ur1("fonts/GardensC.otf");
+    font-family: "GardensC";
+    src: url("fonts/GardensC.otf");
 }
-*{
-font-family: "GardensC";
-margin: 0; padding: 0;
-letter-spacing: 1px;
-box-sizing: border-box;
+
+{
+    font-family: "GardensC";
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+    box-sizing: border-box;
 }
+
 label{
     margin: 0 !important;
 }
@@ -17,7 +20,7 @@ body{
 }
 
 a{
-color: inherit;
+    color: inherit;
 }
 a:hover{
     color: inherit;
@@ -56,7 +59,8 @@ section.panel{
     background-color: #fff;
     color: #3d67b0;
     padding: 10px 45px;
-    border: solid 2px #fff; border-radius: 10px;
+    border: solid 2px #fff;
+    border-radius: 10px;
     transition: .5s ease-in-out;
 }
 .btn-white-big:hover{
@@ -109,10 +113,10 @@ section#first-page > header{
 section#first-page .logo img{
     width: 100px;
 }
-section#first-page contact > .item p{
+section#first-page .contact > .item p{
     font-size: 12px;
 }
-section#first-page contact > item img{
+section#first-page .contact > .item img{
     width: 25px;
     margin-right: 15px;
 }
@@ -141,4 +145,37 @@ section#first-page .nav li::after{
 }
 section#first-page .nav li:hover::after{
     width: 50%;
+}
+
+
+section#advantages {
+    background: transparent;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+section#advantages .item{
+    height: 100%;
+    transform: scale(.6);
+    transition: .5s ease-in-out;
+    user-select: none;
+}
+section#advantages .item: hover{
+    transform: scale(.8);
+}
+section#advantages .item img{
+    height: 90%;
+}
+section#advantages .item p{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+section#about-us{
+    color: #fff;
+    margin-bottom: 100px;
+    height: 150vh;
+    background: url("../img/about-us-bg.png") center no-repeat;
+    background-size: 100% 100%;
 }
