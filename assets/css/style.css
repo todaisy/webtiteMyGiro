@@ -179,3 +179,109 @@ section#about-us{
     background: url("../img/about-us-bg.png") center no-repeat;
     background-size: 100% 100%;
 }
+
+
+section#partners .item{
+    font-size: 50px;
+    cursor: default;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #fff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transform: translate(-100%);
+    transition-duration: .4s;
+    opacity: 1;
+}
+section#partners .item p{
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: #c5c5c5;
+}
+section#partners .item:hover{
+    color: #3d67b0;
+}
+section#partners input[type="radio"]{
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+}
+section#partners input[type="radio"]:checked + .partners-label{
+    border: solid 1px #3d67b0;
+    background-color: #3d67b0;
+}
+
+section#partners input[type="radio"]:checked ~ .item {
+    transform: translate(100%);
+}
+section#partners input[type="radio"]:checked + .partners-label + .item {
+    transform: translate(0);
+    opacity: 1;
+}
+section#partners .partners-label{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: solid 1px #e0e0e0;
+    cursor: pointer;
+    margin: 6px !important;
+    transition: .5s ease-in-out;
+}
+section#partners #brand-container{
+    overflow: hidden;
+    position: relative;
+}
+
+
+section#consultants{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+section#consultants .item{
+    height: 100%;
+    width: 50%;
+}
+section#consultants .item img{
+    height: 200px;
+}
+section#consultants .item .item-title{
+    color: #3d67b0;
+    margin-top: 15px;
+    font-size: 25px;
+}
+section#consultants .item .item-description{
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+
+section#about-segway{
+    margin-top: 150px;
+    position: relative;
+}
+section#about-segway .section-image{
+    height: 300px;
+}
+section#about-segway .title{
+    font-size: 30px;
+    color: #3d67b0;
+}
+section#about-segway .title img{
+    margin-right: 15px;
+    width: 30px;
+}
+section#about-segway ol{
+    margin-top: 25px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+
+
