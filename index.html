@@ -195,12 +195,16 @@
 
 <section class="panel" id="catalog">
     <h1 class="section-title text-upper">каталог</h1>
+    <input type="radio" id="all" name="categories" value="all">
     <input type="radio" id="giroscooters" name="categories" value="giroscooters">
     <input type="radio" id="electric_scooters" checked name= "categories" value="electric scooters">
     <input type="radio" id="segways" name="categories" value="segways">
     <div class="categories">
         <form id="catalog_filter">
             <ul id="categories-container">
+                <li>
+                    <label for="all" id="all-tab" class="text-upper">Все</label>
+                </li>
                 <li>
                     <label for="giroscooters" id="giroscooters-tab" class="text-upper">Гироскутеры</label>
                 </li>
@@ -213,6 +217,7 @@
             </ul>
         </form>
     </div>
+
 
     <div class="panels">
         <div id="electric_scooters-container" class="justify-content-between flex-wrap catalog-container">
@@ -329,9 +334,96 @@
             </div>
         </div>
     </div>
+
 </section>
 
+<section class="panel" id="useful-info">
+    <h1 class="section-title text-upper">Полезная инфорамация</h1>
+    <div class=" d-flex justify-content-center align-items-center flex-column -content">
+        <div class="content w-75 d-flex" style="height: 70vh;">
+            <div class="item d-flex justify-content-between align-items-center">
+                <img class="item-img" src="assets/img/useful_info/1.jpg" alt="image">
+                <div class="p-5">
+                    <div class="d-flex justify-content-start">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/img/fire.png" alt="fire-icon">
+                            <p class="text-upper mt-3">new</p>
+                        </div>
+                    </div>
+                    <h1 class="title text-upper">Как выбрать гироскутер перед покупкой?</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Doloribus inventore voluptatum eligendi nihil commodi dolorum nisi
+                        blanditis illo eaque maxime iusto optio omnis animi, consequuntur architecto
+                        aspernatur, iure! Voluptates, voluptatum!</p>
+                </div>
+            </div>
+        </div>
+        <div class="content w-75 d-flex" style="height: 70vh;">
+            <div class="item d-flex justify-content-between align-items-center flex-row-reverse">
+                <img class="item-img" src="assets/img/useful_info/2.jpg" alt="image">
+                <div class="p-5">
+                    <div class="d-flex justify-content-start">
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="assets/img/fire.png" alt="fire-icon">
+                            <p class="text-upper mt-3">new</p>
+                        </div>
+                    </div>
+                    <h1 class="title text-upper">Электросамокат. Какой лучше и как выбрать?</h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Doloribus inventore voluptatum eligendi nihil commodi dolorum nisi blanditiis
+                    illo eaque maxime iusto optio omnis animi, consequuntur architecto aspernatur,
+                    iure! Voluptates, voluptatum!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<section class="panel" id="sub">
+    <div class="container h-100 d-flex justify-content-center align-items-center flex-column">
+        <h1 class="section-title text-upper" style="color: #fff">подписка на рассылку</h1>
+        <form class="w-50 mt-5 d-flex flex-column align-items-center">
+            <input type="text" class="form-control" placeholder="ФИ0">
+            <input type="text" class="form-control mt-3" placeholder="ПОЧТА">
+            <button class="btn btn-white-big text-upper mt-5">Подписаться</button>
+        </form>
+    </div>
+</section>
+
+<footer class="panel">
+    <div class="h-100 d-flex justify-content-between align-items-center" style="width: 80vw; margin: O auto;">
+        <div class="footer-logo"><img src="assets/img/logo-blue.png" alt="logo"></div>
+        <div class="h-100 d-flex align-items-end">
+            <ul class="nav">
+                <li class="text-upper"><a href="#advantages">O нac</a></li>
+                <li class="text-upper"><a href="#catalog">Каталог</a></li>
+                <li class="text-upper"><a href="#sub">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="d-flex justify-content-evenly flex-column h-100">
+            <div class="contact">
+                <div class="item d-flex justify-content-start align-items-center mb-2">
+                    <img src="assets/img/address-blue.png" alt="address">
+                    <p class="text-upper">москва, набережная 2 оф. 142</p>
+                </div>
+                <div class="item d-flex justify-content-start align-items-center">
+                    <img src="assets/img/phone-blue.png" alt="phone">
+                    <p class="text-upper">+7 923 398 9013</p>
+                </div>
+            </div>
+            <div class="social mt-1">
+                <p>Мы в соц. сетях: </p>
+                <div class="social-icons">
+                    <img src="assets/img/social_icons/vk.png" alt="vk">
+                    <img src="assets/img/social_icons/instagram.png" alt="inst">
+                    <img src="assets/img/social_icons/youtube.png" alt="youtube">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<a class="btn btn-primary btn-up" href="#first-page">
+    <img src="assets/img/go_up.png" alt="go up"></a>
 
 </html>
 

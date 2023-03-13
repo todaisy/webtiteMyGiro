@@ -300,6 +300,7 @@ section#catalog input[type="radio"]{
     position: absolute;
     opacity: 0;
 }
+section#catalog #all:checked ~ .categories #all-tab,
 section#catalog #giroscooters:checked ~ .categories #giroscooters-tab,
 section#catalog #electric_scooters:checked ~ .categories #electric_scooters-tab,
 section#catalog #segways:checked ~ .categories #segways-tab
@@ -307,9 +308,13 @@ section#catalog #segways:checked ~ .categories #segways-tab
     color: #fff;
     background: #3d67b0;
 }
+section#catalog #all:checked ~ .panels #giroscooters-container,
+section#catalog #all:checked ~ .panels #electric_scooters-container,
+section#catalog #all:checked ~ .panels #segways-container,
+
 section#catalog #giroscooters:checked ~ .panels #giroscooters-container,
 section#catalog #electric_scooters:checked ~ .panels #electric_scooters-container,
-section#catalog #segways: checked ~ .panels #segways-container
+section#catalog #segways:checked ~ .panels #segways-container
 {
     display: flex;
 }
@@ -362,3 +367,81 @@ section#catalog .catalog-container .c-card .price-container .price{
     font-size: 20px;
 }
 
+section#useful-info{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+section#useful-info .u-content{
+    margin-top: 80px;
+}
+section#useful-info .content .item{
+    width: 100%;
+    height: 100%;
+}
+section#useful-info .content item img.item-img{
+    object-fit: cover;
+    border-radius: 20px;
+    width: 350px;
+}
+section#useful-info .content .item .title{
+    font-size: 30px;
+    color: #3d67b0;
+    margin: 15px 0;
+}
+
+section#sub{
+    height: 100vh;
+    margin-bottom: 15vh;
+    background: url("../img/sub-bg.png") center no-repeat;
+    background-size: 100% 100%;
+}
+
+footer{
+    height: 30vh;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    top: calc (100% - 15vh);
+    left: 0;
+}
+footer .nav{
+    list-style-type: none;
+    display: flex;
+    color: #3d67b0;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+footer .nav li{
+    padding-left: 35px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+footer .nav li:first-of-type{
+    padding-left: 0;
+}
+footer .nav li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #3d67b0;
+    transition: .5s ease-in-out;
+}
+footer .nav li:hover::after{
+    width: 50%;
+}
+footer .footer-logo img{
+    width: 250px;
+}
+footer .contact > .item p{
+    font-size: 12px;
+}
+footer .contact > .item img{
+    width: 25px;
+    margin-right: 15px;
+}
+footer .social-icons img{
+    width: 35px;
+    cursor: pointer;
+}
